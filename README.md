@@ -14,29 +14,29 @@ npm install --save noop-tag
 
 ## Usage
 
-``````ts
+```ts
 import css from 'noop-tag';
 import javascript from 'noop-tag';
 import html from 'noop-tag';
 
-const x = css```
+const x = css`
   .foo {
     color: red;
   }
-```;
+`;
 
-const y = javascript```
+const y = javascript`
   function () {
     return 123;
   }
-```;
+`;
 
-const z = html```
+const z = html`
   <div>
     <b>Bold</b>
   </div>
-```;
-``````
+`;
+```
 
 ## License
 
