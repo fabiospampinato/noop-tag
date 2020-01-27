@@ -1,7 +1,7 @@
 
 /* NOOP */
 
-function noop () {
+function noop ( arr: TemplateStringsArray ): string {
 
   const args = arguments,
         strings = args[0],
