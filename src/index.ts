@@ -1,11 +1,9 @@
 
 /* NOOP */
 
-function noop ( arr: TemplateStringsArray ): string {
+function noop ( strings: TemplateStringsArray, ...exp: any[] ): string {
 
-  const args = arguments,
-        strings = args[0],
-        lastIndex = strings.length - 1;
+  const lastIndex = strings.length - 1;
 
   if ( !lastIndex ) return strings[0];
 
@@ -18,7 +16,7 @@ function noop ( arr: TemplateStringsArray ): string {
 
     if ( part ) acc += part;
 
-    acc += args[i + 1];
+    acc += exp[i];
 
   }
 
