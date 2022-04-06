@@ -1,8 +1,8 @@
 
 /* IMPORT */
 
-const {default: noop} = require ( '../dist' ),
-      benchmark = require ( 'benchloop' );
+import benchmark from 'benchloop';
+import noop from '../dist/index.js';
 
 /* BENCHMARK */
 

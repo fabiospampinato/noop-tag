@@ -1,10 +1,10 @@
 
 /* IMPORT */
 
-import {describe} from 'ava-spec';
-import {default as noop} from '../dist';
+import {describe} from 'fava';
+import noop from '../dist/index.js';
 
-/* NOOP TAG */
+/* MAIN */
 
 describe ( 'Noop Tag', it => {
 
@@ -20,7 +20,9 @@ describe ( 'Noop Tag', it => {
     ];
 
     tests.forEach ( ([ result, expected ]) => {
+
       t.is ( result, expected );
+
     });
 
   });

@@ -1,30 +1,20 @@
 
-/* NOOP */
+/* MAIN */
 
-function noop ( strings: TemplateStringsArray, ...exp: any[] ): string {
+const noop = ( strings: TemplateStringsArray, ...expressions: unknown[] ): string => {
 
-  const lastIndex = strings.length - 1;
+  let result = strings[0];
 
-  if ( !lastIndex ) return strings[0];
+  for ( let i = 1, l = strings.length; i < l; i++ ) {
 
-  let acc = '',
-      part;
-
-  for ( let i = 0; i < lastIndex; i++ ) {
-
-    part = strings[i];
-
-    if ( part ) acc += part;
-
-    acc += exp[i];
+    result += expressions[i - 1];
+    result += strings[i];
 
   }
 
-  part = strings[lastIndex];
+  return result;
 
-  return part ? acc += part : acc;
-
-}
+};
 
 /* EXPORT */
 
