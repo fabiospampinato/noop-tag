@@ -4,11 +4,10 @@
 import benchmark from 'benchloop';
 import noop from '../dist/index.js';
 
-/* BENCHMARK */
+/* MAIN */
 
 benchmark.defaultOptions = Object.assign ( benchmark.defaultOptions, {
-  iterations: 500000,
-  log: 'compact'
+  iterations: 500_000
 });
 
 benchmark ({
