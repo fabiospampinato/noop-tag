@@ -7,7 +7,7 @@ This package is basically a clone of [fake-tag](https://github.com/jaydenseric/f
 ## Install
 
 ```sh
-npm install --save noop-tag
+npm install noop-tag
 ```
 
 ## Usage
@@ -16,6 +16,8 @@ npm install --save noop-tag
 import css from 'noop-tag';
 import javascript from 'noop-tag';
 import html from 'noop-tag';
+
+// Some example usages
 
 const x = css`
   .foo {
