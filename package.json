@@ -23,7 +23,7 @@
     "literals",
     "tag",
     "noop",
-    "identiy"
+    "identity"
   ],
   "devDependencies": {
     "benchloop": "^2.1.1",
